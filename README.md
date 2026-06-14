@@ -36,7 +36,9 @@ Open `index.html` and replace or adjust the profile details:
 - Discord user embed uses `https://widgets.vendicated.dev/user?id=1200276108474601534`.
 - Mello Zone server widget uses Discord server ID `1483048984745345099`.
 - Server widget JSON endpoint: `https://discord.com/api/guilds/1483048984745345099/widget.json`.
+- The page tries to read the public Discord widget JSON with vanilla JavaScript. If browser/CORS rules block it, the iframe widget still works.
 - Spotify profile link: `https://open.spotify.com/user/2z4kruowiuhpf3w0vvhmhdpoz`.
+- Spotify recently played image: `https://spotify-recently-played-readme.vercel.app/api?user=2z4kruowiuhpf3w0vvhmhdpoz&count=5&width=500&unique=true`.
 - Spotify user profiles do not currently work as direct Spotify embeds. Use an artist, album, playlist, track, show, or episode embed URL if you want an iframe.
 - Do not put a Spotify client secret in this static site. GitHub Pages is frontend-only, so secrets would be visible to visitors. Use a backend or serverless function if you later want Spotify Web API data.
 

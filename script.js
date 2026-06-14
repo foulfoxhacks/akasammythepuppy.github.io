@@ -24,6 +24,23 @@ if (profileImage && profilePlaceholder) {
   }
 }
 
+const discordStats = document.querySelector("[data-discord-stats]");
+if (discordStats) {
+  fetch("https://discord.com/api/guilds/1483048984745345099/widget.json")
+    .then((response) => {
+      if (!response.ok) throw new Error("Discord widget request failed");
+      return response.json();
+    })
+    .then((data) => {
+      const online = Number(data.presence_count || 0);
+      const memberPreview = Array.isArray(data.members) ? data.members.length : 0;
+      discordStats.textContent = `${data.name || "Mello Zone"}: ${online} online now, ${memberPreview} members visible in the widget.`;
+    })
+    .catch(() => {
+      discordStats.textContent = "Live status is available in the Discord server widget below.";
+    });
+}
+
 const revealTargets = document.querySelectorAll(
   ".card, .social-links a"
 );

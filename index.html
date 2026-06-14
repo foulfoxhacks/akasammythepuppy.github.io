@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mello Zone community leader, streamer, proud furry puppy, mental health and LGBTQ advocate.">
   <title>Sammy The Femboy Puppy | Mello Zone</title>
-  <link rel="stylesheet" href="style.css?v=clean-mello-6">
+  <link rel="stylesheet" href="style.css?v=clean-mello-7">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -179,6 +179,9 @@
                 sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
               </iframe>
             </div>
+            <p class="discord-json-status" data-discord-stats>
+              Live server status loads when Discord allows the widget JSON request.
+            </p>
 
             <div class="activity-row">
               <div class="activity-icon" aria-hidden="true">MZ</div>
@@ -194,33 +197,27 @@
 
         <article class="card music-card" id="music">
           <h2>my music</h2>
-          <div class="music-player" aria-label="Music feature placeholder">
+          <div class="music-player" aria-label="Spotify recently played music">
             <!--
-              Spotify embed:
-              Replace this custom player with your Spotify iframe when you have your artist, album, or playlist URL.
-              Example iframe src format:
-              https://open.spotify.com/embed/artist/YOUR_ARTIST_ID?utm_source=generator
+              Spotify recently played:
+              This public image endpoint is safe for a static site and does not expose Spotify secrets.
+              Source project: https://github.com/JeffreyCA/spotify-recently-played-readme
             -->
             <div class="music-hero">
               <img src="assets/profile.jpg" alt="" aria-hidden="true">
               <div>
-                <strong>Mello Mix</strong>
-                <span>Spotify profile and current favorites</span>
+                <strong>Recently Played</strong>
+                <span>Live from Sammy's Spotify profile</span>
                 <a href="https://open.spotify.com/user/2z4kruowiuhpf3w0vvhmhdpoz">Open Spotify</a>
               </div>
               <span class="spotify-mark" aria-hidden="true">Sp</span>
             </div>
-            <div class="music-controls" aria-hidden="true">
-              <span></span>
-              <div></div>
-              <strong>00:00</strong>
-              <button type="button" tabindex="-1">Play</button>
-            </div>
-            <ol class="track-list">
-              <li><span>Furry Pup & Hobbyist Creator</span><strong>link</strong></li>
-              <li><span>Proud Mello Zone Resident</span><strong>link</strong></li>
-              <li><span>Always Learning, Always Building</span><strong>link</strong></li>
-            </ol>
+            <a class="recently-played-link" href="https://open.spotify.com/user/2z4kruowiuhpf3w0vvhmhdpoz">
+              <img
+                class="recently-played-card"
+                src="https://spotify-recently-played-readme.vercel.app/api?user=2z4kruowiuhpf3w0vvhmhdpoz&count=5&width=500&unique=true"
+                alt="Spotify recently played tracks for Sammy">
+            </a>
           </div>
         </article>
       </div>
@@ -311,6 +308,6 @@
     <p>&copy; <span id="year">2026</span> Sammy The Femboy Puppy</p>
   </footer>
 
-  <script src="script.js?v=clean-mello-6"></script>
+  <script src="script.js?v=clean-mello-7"></script>
 </body>
 </html>
