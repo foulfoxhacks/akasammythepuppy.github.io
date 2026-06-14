@@ -7,20 +7,23 @@ A static GitHub Pages-ready “About Me” website for a furry, VRChat, streamin
 - `index.html` - page content, sections, links, and Twitch iframe
 - `style.css` - dark neon theme, responsive layout, glow effects, and animations
 - `script.js` - current year, profile image fallback, and lightweight reveal animations
+- `assets/profile.jpg` - local profile image
 - `README.md` - setup and deployment notes
 
 ## Customize
 
-Open `index.html` and replace the placeholders:
+Open `index.html` and replace or adjust the profile details:
 
 - `Sammy The Femboy Puppy`
-- Bio text
-- `assets/profile-placeholder.png`
+- Bio text and Mello Zone wording
+- `assets/profile.jpg`
 - TikTok URL
 - Twitch URL
 - YouTube URL
 - Discord invite URL
+- Instagram/X/Facebook URLs
 - GitHub URL
+- Beacons and Linktree URLs
 - Email/contact link
 
 Open `style.css` to customize:
@@ -29,6 +32,15 @@ Open `style.css` to customize:
 - Background animation styles
 - Profile/avatar presentation
 - Card glow and hover effects
+
+## Link References
+
+This version uses public details from:
+
+- `https://beacons.ai/akasammythepuppy`
+- `https://linktr.ee/akasammythepuppy`
+
+The layout is inspired by compact link-in-bio pages: profile-first hero, large rounded link cards, social tiles, and a creator hub feel.
 
 ## Twitch Embed
 

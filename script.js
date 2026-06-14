@@ -25,7 +25,7 @@ if (profileImage && profilePlaceholder) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".about, .projects, .socials, .featured, .live, .contact, .glow-card, .link-card"
+  ".card, .section-block, .thumbnail-card, .social-icon"
 );
 
 if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to my landing page.">
-  <title>Sammy The Femboy Puppy | Community Advocate, VRChat Content Daily, Streaming to the interwebs</title>
+  <meta name="description" content="Mello Zone community leader, streamer, proud furry puppy, mental health and LGBTQ advocate.">
+  <title>Sammy The Femboy Puppy | Aka Sammy The Puppy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,11 +18,11 @@
     <div class="tail-glow"></div>
   </div>
 
-  <header class="site-header">
-    <nav class="nav-shell" aria-label="Primary navigation">
+  <header class="hero" id="top">
+    <nav class="top-nav" aria-label="Primary navigation">
       <a class="brand-mark" href="#top" aria-label="Sammy The Femboy Puppy home">
         <span class="brand-icon" aria-hidden="true"></span>
-        <span>Creator Name</span>
+        <span>Sammy The Femboy Puppy</span>
       </a>
       <div class="nav-links">
         <a href="#about">About</a>
@@ -31,168 +31,175 @@
         <a href="#contact">Contact</a>
       </div>
     </nav>
+
+    <div class="hero-content">
+      <div class="avatar-frame">
+        <!-- Profile image: replace this path with your avatar file, such as assets/profile.png. -->
+        <img class="profile-image" src="assets/profile.jpg" alt="Sammy The Femboy Puppy profile avatar">
+        <div class="profile-placeholder" hidden>
+          <span class="placeholder-ears" aria-hidden="true"></span>
+          <span class="placeholder-face">SP</span>
+        </div>
+      </div>
+      <p class="eyebrow">Sammy The Foxxo / @akasammythepuppy</p>
+      <h1>Sammy The Femboy Puppy</h1>
+      <p class="hero-copy">Mello Zone community leader, streamer, proud furry puppy, mental health and LGBTQ advocate. Remember you deserve to exist. #KeepItMello</p>
+      <div class="button-row" aria-label="Creator social links">
+        <!-- Social links: replace each href with your real profile URL. -->
+        <a class="button button-primary" href="https://discord.mellozone.site/">Join Mello Zone</a>
+        <a class="button" href="https://www.tiktok.com/@akasammythepuppy">TikTok</a>
+        <a class="button" href="https://www.twitch.tv/akasammythepuppy">Twitch</a>
+        <a class="button" href="https://www.youtube.com/@akasammythepuppy">YouTube</a>
+      </div>
+    </div>
   </header>
 
-  <main id="main">
-    <section class="hero section-shell" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow">Advocating Mental Health + Bringing Positivity Through Content</p>
-        <h1>Creator Name</h1>
-        <p class="hero-tagline">Cozy neon streams, playful VRChat moments, and community-first creative projects.</p>
-        <div class="button-row" aria-label="Creator social links">
-          <!-- Social links: replace each href with your real profile URL. -->
-          <a class="button button-primary" href="https://www.tiktok.com/@akasammythepuppy">TikTok</a>
-          <a class="button" href="https://www.twitch.tv/akasammythepuppy">Twitch</a>
-          <a class="button" href="https://www.youtube.com/@akasammythepuppy">YouTube</a>
-          <a class="button" href="https://discord.gg/pZXXXGq5wQ">Discord</a>
-          <a class="button" href="https://github.com/foulfoxhacks">GitHub</a>
-        </div>
-      </div>
-
-      <div class="avatar-card" aria-label="Creator profile image placeholder">
-        <div class="avatar-orbit" aria-hidden="true"></div>
-        <div class="avatar-frame">
-          <!-- Profile image: replace this path with your avatar file, such as assets/profile.png. -->
-          <img class="profile-image" src="assets/profile-placeholder.png" alt="Creator Name profile avatar">
-          <div class="profile-placeholder" hidden>
-            <span class="placeholder-ears" aria-hidden="true"></span>
-            <span class="placeholder-face">CN</span>
-          </div>
-        </div>
-        <p class="avatar-caption">Your avatar, fursona, or creator icon goes here.</p>
-      </div>
-    </section>
-
-    <section class="about section-shell" id="about">
-      <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2>Building a warm corner of the internet.</h2>
-      </div>
-      <div class="about-grid">
+  <main class="page-wrapper" id="main">
+    <section class="bento-grid" aria-label="Creator profile cards">
+      <article class="card intro-card" id="about">
+        <p class="eyebrow">About me</p>
+        <h2>soft paws, loud neon, welcoming energy.</h2>
         <p>
-          Hi, I am <strong>Creator Name</strong>, a furry creator making VRChat content, livestreams, community moments, and creative projects with a cozy neon style.
+          Hi, I am <strong>Sammy The Femboy Puppy</strong>, also known online as <strong>Sammy The Foxxo</strong> and <strong>Aka Sammy The Puppy</strong>. I make furry, VRChat, livestreaming, and community content with a cozy neon style.
         </p>
         <p>
-          This space is for sharing what I am building, where I am streaming, and how people can connect. I focus on expressive digital identity, welcoming community energy, and playful projects that bring people together.
+          This page is my home base for the Mello Zone, social links, streams, creative projects, and the places where people can come hang out.
         </p>
-      </div>
+      </article>
+
+      <article class="card mini-card">
+        <h2>creator vibe</h2>
+        <p>Furry identity, VRChat expression, stream hangouts, mental health advocacy, LGBTQ support, and dreamy hypno fox glow.</p>
+      </article>
+
+      <article class="card mini-card">
+        <h2>current focus</h2>
+        <p>TikTok community creation, Mello Zone growth, Discord events, VRChat exploration, and playful web experiments.</p>
+      </article>
+
+      <article class="card live-status-card">
+        <p class="eyebrow">quick links</p>
+        <h2>come say hi</h2>
+        <div class="compact-links">
+          <!-- Social links: swap these placeholder URLs with your live links. -->
+          <a href="https://www.twitch.tv/akasammythepuppy">Twitch</a>
+          <a href="https://discord.mellozone.site/">Discord</a>
+          <a href="https://www.youtube.com/@akasammythepuppy">YouTube</a>
+          <a href="https://beacons.ai/akasammythepuppy">Beacons</a>
+        </div>
+      </article>
     </section>
 
-    <section class="projects section-shell" id="projects">
+    <section class="section-block" id="projects">
       <div class="section-heading">
         <p class="eyebrow">Projects</p>
-        <h2>Creative zones and community sparks.</h2>
+        <h2>my neon little zones</h2>
       </div>
-      <div class="card-grid">
-        <article class="glow-card">
+      <div class="project-grid">
+        <article class="card project-card">
           <h3>Mello Zone</h3>
-          <p>A soft, expressive hub for cozy creator updates, featured links, and community-friendly moments.</p>
+          <p>The positive community hub behind the Mello Zone: Discord, VRChat, creator updates, and cozy hangouts.</p>
         </article>
-        <article class="glow-card">
+        <article class="card project-card">
           <h3>VRChat Content</h3>
-          <p>Avatar hangouts, world exploration, funny clips, and immersive social experiences from inside VRChat.</p>
+          <p>Official Mello Zone group moments, avatar hangouts, world exploration, and immersive social spaces.</p>
         </article>
-        <article class="glow-card">
+        <article class="card project-card">
           <h3>Streaming</h3>
-          <p>Live hangouts, games, creative sessions, and chill chat streams built around connection and good vibes.</p>
+          <p>Twitch hangouts, games, creative sessions, and chat-focused streams built around connection.</p>
         </article>
-        <article class="glow-card">
+        <article class="card project-card">
           <h3>Community Projects</h3>
-          <p>Events, Discord ideas, collaborative creator spaces, and small experiments that help people feel welcome.</p>
+          <p>Mental health advocacy, LGBTQ support, creator events, collaborative spaces, and welcoming experiments.</p>
         </article>
-        <article class="glow-card">
+        <article class="card project-card">
           <h3>GitHub / Development</h3>
-          <p>Personal tools, web projects, experiments, and open code that support creator workflows and community sites.</p>
+          <p>GitHub Pages, static sites, creative coding, and web projects for creator workflows.</p>
         </article>
       </div>
     </section>
 
-    <section class="socials section-shell" id="socials">
-      <div class="section-heading">
-        <p class="eyebrow">Social Links</p>
-        <h2>Find me around the web.</h2>
-      </div>
-      <div class="link-grid">
-        <!-- Social links: swap these placeholder URLs with your live links. -->
-        <a class="link-card" href="https://www.tiktok.com/@akasammythepuppy">
-          <span>TikTok</span>
-          <small>@akasammythepuppy</small>
-        </a>
-        <a class="link-card" href="https://www.twitch.tv/akasammythepuppy">
-          <span>Twitch</span>
-          <small>twitch.tv/akasammythepuppy</small>
-        </a>
-        <a class="link-card" href="https://www.youtube.com/@akasammythepuppy">
-          <span>YouTube</span>
-          <small>@akasammythepuppy</small>
-        </a>
-        <a class="link-card" href="https://discord.gg/pZXXXGq5wQ">
-          <span>Discord</span>
-          <small>discord.gg/pZXXXGq5wQ</small>
-        </a>
-        <a class="link-card" href="https://github.com/foulfoxhacks">
-          <span>GitHub</span>
-          <small>github.com/foulfoxhacks</small>
-        </a>
-      </div>
-    </section>
-
-    <section class="featured section-shell" id="featured">
-      <div class="feature-panel">
+    <section class="section-block media-card" id="featured">
+      <div class="art-card-header">
         <div>
           <p class="eyebrow">Featured Content</p>
-          <h2>Latest video or stream highlight</h2>
-          <p>
-            Use this space for your newest YouTube upload, a TikTok highlight, or a favorite stream clip. Replace the button URL with the content you want visitors to see first.
-          </p>
+          <h2>latest video or stream highlight</h2>
         </div>
-        <a class="button button-primary" href="https://www.youtube.com/@akasammythepuppy">Watch the Highlight</a>
+        <p>A Linktree/Beacons-inspired launch pad for your most important destinations, tuned with your Mello Zone branding.</p>
       </div>
+      <div class="thumbnail-grid" aria-label="Featured content placeholders">
+        <a class="thumbnail-card large-thumbnail" href="https://discord.mellozone.site/">
+          <span>Join the Official Mellow Zone Discord</span>
+        </a>
+        <a class="thumbnail-card" href="https://www.youtube.com/@akasammythepuppy">
+          <span>YouTube Videos</span>
+        </a>
+        <a class="thumbnail-card" href="https://www.twitch.tv/akasammythepuppy">
+          <span>Twitch Streams</span>
+        </a>
+      </div>
+      <a class="button button-primary" href="https://beacons.ai/akasammythepuppy">Open Beacons Page</a>
     </section>
 
-    <section class="live section-shell" id="live">
+    <section class="section-block stream-card" id="live">
       <div class="section-heading">
         <p class="eyebrow">Watch Me Live</p>
         <h2>Twitch stream room</h2>
       </div>
-      <div class="stream-card">
-        <div class="responsive-embed">
-          <!--
-            Twitch channel: replace "akasammythepuppy" in the URL with your channel name.
-            GitHub Pages parent domain: replace "akasammythepuppy.github.io" with your GitHub Pages domain.
-            Twitch embeds require the parent parameter to match the exact domain hosting this page.
-          -->
-          <iframe
-            src="https://player.twitch.tv/?channel=akasammythepuppy&parent=akasammythepuppy.github.io"
-            title="Twitch livestream player"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <div class="stream-actions">
-          <p>If the player is offline or blocked by browser settings, you can open the channel directly.</p>
-          <a class="button" href="https://www.twitch.tv/akasammythepuppy">Open Twitch Channel</a>
-        </div>
+      <div class="responsive-embed">
+        <!--
+          Twitch channel: replace "akasammythepuppy" in the URL with your channel name.
+          GitHub Pages parent domain: replace "akasammythepuppy.github.io" with your GitHub Pages domain.
+          Twitch embeds require the parent parameter to match the exact domain hosting this page.
+        -->
+        <iframe
+          src="https://player.twitch.tv/?channel=akasammythepuppy&parent=akasammythepuppy.github.io"
+          title="Twitch livestream player"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="stream-actions">
+        <p>If the player is offline or blocked by browser settings, open the channel directly.</p>
+        <a class="button" href="https://www.twitch.tv/akasammythepuppy">Open Twitch Channel</a>
       </div>
     </section>
 
-    <section class="contact section-shell" id="contact">
-      <div class="contact-panel">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Want to hang out, collaborate, or join the community?</h2>
-          <p>Use the Discord invite or contact link below. Replace these placeholders with your real community and business contact links.</p>
-        </div>
-        <div class="button-row">
-          <a class="button button-primary" href="https://discord.gg/pZXXXGq5wQ">Join Discord</a>
-          <a class="button" href="mailto:contactus@mellozone.site">Contact Email</a>
-        </div>
+    <section class="section-block socials-card" id="socials">
+      <div class="section-heading">
+        <p class="eyebrow">Social Links</p>
+        <h2>find me around the web</h2>
+      </div>
+      <div class="social-icon-grid">
+        <!-- Social links: swap these placeholder URLs with your live links. -->
+        <a class="social-icon" href="https://www.tiktok.com/@akasammythepuppy"><span>Tk</span><small>TikTok</small></a>
+        <a class="social-icon" href="https://www.twitch.tv/akasammythepuppy"><span>Tw</span><small>Twitch</small></a>
+        <a class="social-icon" href="https://www.youtube.com/@akasammythepuppy"><span>Yt</span><small>YouTube</small></a>
+        <a class="social-icon" href="https://discord.mellozone.site/"><span>Dc</span><small>Discord</small></a>
+        <a class="social-icon" href="https://instagram.com/akasammythepuppy"><span>Ig</span><small>Instagram</small></a>
+        <a class="social-icon" href="https://x.com/xitscutiesammyx"><span>X</span><small>X</small></a>
+        <a class="social-icon" href="https://www.facebook.com/akasammythepuppy"><span>Fb</span><small>Facebook</small></a>
+        <a class="social-icon" href="https://github.com/foulfoxhacks"><span>Gh</span><small>GitHub</small></a>
+        <a class="social-icon" href="https://beacons.ai/akasammythepuppy"><span>Be</span><small>Beacons</small></a>
+        <a class="social-icon" href="https://linktr.ee/akasammythepuppy"><span>Lt</span><small>Linktree</small></a>
+      </div>
+    </section>
+
+    <section class="section-block contact-card" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>collabs, community, and cozy chaos.</h2>
+        <p>Join the Mello Zone, find me on social, or use the contact email for business/community inquiries.</p>
+      </div>
+      <div class="button-row">
+        <a class="button button-primary" href="https://discord.mellozone.site/">Join Discord</a>
+        <a class="button" href="mailto:contactus@mellozone.site">Contact Email</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="social-footer">
+    <p>Stay Mello Fellow</p>
     <p>&copy; <span id="year">2026</span> Sammy The Femboy Puppy. All rights reserved.</p>
-    <p>Cozy neon fox energy for friends, fans, and future projects.</p>
   </footer>
 
   <script src="script.js"></script>
