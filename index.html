@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mello Zone community leader, streamer, proud furry puppy, mental health and LGBTQ advocate.">
   <title>Sammy The Femboy Puppy | Mello Zone</title>
-  <link rel="stylesheet" href="style.css?v=clean-mello-4">
+  <link rel="stylesheet" href="style.css?v=clean-mello-5">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -65,6 +65,28 @@
         </p>
       </article>
 
+      <article class="card datapad-card">
+        <h2>sammy's data-pad</h2>
+        <dl class="datapad-list">
+          <div>
+            <dt>Class</dt>
+            <dd>Cyber-Pup / Digital Watchdog</dd>
+          </div>
+          <div>
+            <dt>Faction</dt>
+            <dd>The Mello Zone Furry Community</dd>
+          </div>
+          <div>
+            <dt>Specialty</dt>
+            <dd>OSINT, Blue Team Defense, Friendly Chaos</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd>Sipping coffee and building brighter spaces</dd>
+          </div>
+        </dl>
+      </article>
+
       <article class="card links-card">
         <h2>main links</h2>
         <div class="link-stack">
@@ -75,6 +97,25 @@
           <a href="https://www.tiktok.com/@akasammythepuppy">TikTok</a>
           <a href="https://www.twitch.tv/akasammythepuppy">Twitch</a>
           <a href="https://www.youtube.com/@akasammythepuppy">YouTube</a>
+          <a href="https://github.com/foulfoxhacks">GitHub</a>
+          <a href="https://ko-fi.com/itscutiesammyowo">Ko-fi</a>
+        </div>
+      </article>
+
+      <article class="card mission-card">
+        <div class="art-card-header">
+          <div>
+            <span class="eyebrow">mission</span>
+            <h2>my mission & the mello zone</h2>
+          </div>
+          <p>My tech skills are tools I use to protect the spaces and people I care about.</p>
+        </div>
+        <div class="mini-grid">
+          <span>OSINT & investigations</span>
+          <span>Blue Team defense</span>
+          <span>Community protection</span>
+          <span>Systems integration</span>
+          <span>Friendly chaos</span>
         </div>
       </article>
 
@@ -104,12 +145,19 @@
       <div class="feature-pair" aria-label="Discord presence and music cards">
         <article class="card presence-card" id="presence">
           <h2>discord presence</h2>
-          <a class="presence-widget" href="https://discord.mellozone.site/" aria-label="Join the Official Mellow Zone Discord">
+          <a class="presence-widget presence-widget-live" href="https://discord.mellozone.site/" aria-label="Join the Official Mellow Zone Discord">
             <!--
               Live Discord presence:
-              If you want a live Lanyard widget later, replace this custom card with:
-              <img src="https://lanyard.cnrad.dev/api/YOUR_DISCORD_USER_ID?borderRadius=22px&theme=dark&hideTag=true&bg=0b0f25" alt="Discord presence widget">
+              Discord user ID: 1200276108474601534.
+              Lanyard currently does not return public data for this ID, so this visible widget uses
+              the official Mello Zone Discord guild banner from your GitHub profile markdown.
+              No Discord token or secret is needed in the frontend.
             -->
+            <img
+              class="lanyard-widget"
+              src="https://discord.com/api/guilds/1483048984745345099/widget.png?style=banner2"
+              alt="Mello Zone Discord server widget"
+              onerror="this.hidden = true">
             <div class="presence-top">
               <img src="assets/profile.jpg" alt="" aria-hidden="true">
               <div>
@@ -142,8 +190,8 @@
               <img src="assets/profile.jpg" alt="" aria-hidden="true">
               <div>
                 <strong>Mello Mix</strong>
-                <span>Sammy's featured sounds</span>
-                <a href="https://beacons.ai/akasammythepuppy">Follow updates</a>
+                <span>Spotify profile and current favorites</span>
+                <a href="https://open.spotify.com/user/2z4kruowiuhpf3w0vvhmhdpoz">Open Spotify</a>
               </div>
               <span class="spotify-mark" aria-hidden="true">Sp</span>
             </div>
@@ -154,13 +202,37 @@
               <button type="button" tabindex="-1">Play</button>
             </div>
             <ol class="track-list">
-              <li><span>Hypno Fox Hangout</span><strong>02:40</strong></li>
-              <li><span>Keep It Mello</span><strong>02:32</strong></li>
-              <li><span>VRChat Afterglow</span><strong>01:36</strong></li>
+              <li><span>Furry Pup & Hobbyist Creator</span><strong>link</strong></li>
+              <li><span>Proud Mello Zone Resident</span><strong>link</strong></li>
+              <li><span>Always Learning, Always Building</span><strong>link</strong></li>
             </ol>
           </div>
         </article>
       </div>
+
+      <article class="card arsenal-card">
+        <div class="art-card-header">
+          <div>
+            <span class="eyebrow">tech arsenal</span>
+            <h2>tools I tinker with</h2>
+          </div>
+          <p>Security, web, automation, and homelab bits from my main GitHub profile.</p>
+        </div>
+        <div class="tool-cloud" aria-label="Favorite tools and technologies">
+          <span>Python</span>
+          <span>JavaScript</span>
+          <span>PowerShell</span>
+          <span>Linux</span>
+          <span>Docker</span>
+          <span>GitHub</span>
+          <span>Nmap</span>
+          <span>Wireshark</span>
+          <span>Shodan</span>
+          <span>Maltego</span>
+          <span>Burp Suite</span>
+          <span>Homelab</span>
+        </div>
+      </article>
 
       <article class="card stream-card" id="live">
         <h2>watch me live</h2>
@@ -210,7 +282,7 @@
       <a href="https://discord.mellozone.site/" aria-label="Discord">
         <img src="assets/social/discord-black-icon-1.png" alt="Discord">
       </a>
-      <a href="https://open.spotify.com/artist/1HcNcybZciSfLH1VnTxDIS?si=Gkit_WHLQcWimEIzSC5zow" aria-label="Spotify">
+      <a href="https://open.spotify.com/user/2z4kruowiuhpf3w0vvhmhdpoz" aria-label="Spotify">
         <img src="assets/social/spotify-round-black-icon.webp" alt="Spotify">
       </a>
       <a href="https://www.tiktok.com/@akasammythepuppy" aria-label="TikTok">
@@ -225,6 +297,6 @@
     <p>&copy; <span id="year">2026</span> Sammy The Femboy Puppy</p>
   </footer>
 
-  <script src="script.js?v=clean-mello-4"></script>
+  <script src="script.js?v=clean-mello-5"></script>
 </body>
 </html>

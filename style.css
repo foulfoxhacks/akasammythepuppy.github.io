@@ -280,6 +280,40 @@ h3 {
   color: var(--muted);
 }
 
+.datapad-card {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(63, 242, 255, 0.12), transparent 12rem),
+    linear-gradient(180deg, rgba(12, 24, 52, 0.94), rgba(9, 17, 34, 0.94));
+}
+
+.datapad-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.datapad-list div {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.datapad-list div:last-child {
+  border-bottom: 0;
+}
+
+.datapad-list dt {
+  color: var(--cyan);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.datapad-list dd {
+  color: var(--muted);
+}
+
 .profile-card {
   background: linear-gradient(180deg, rgba(41, 20, 78, 0.94), rgba(9, 17, 34, 0.94));
 }
@@ -296,7 +330,8 @@ h3 {
 }
 
 .link-stack a,
-.mini-grid a {
+.mini-grid a,
+.mini-grid span {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -320,6 +355,10 @@ h3 {
   text-transform: uppercase;
 }
 
+.mini-grid span {
+  justify-content: flex-start;
+}
+
 .link-stack a:hover,
 .link-stack a:focus-visible,
 .mini-grid a:hover,
@@ -335,13 +374,21 @@ h3 {
 }
 
 .projects-card,
+.mission-card,
 .feature-pair,
+.arsenal-card,
 .stream-card {
   grid-column: 1 / -1;
 }
 
 .projects-card {
   background: linear-gradient(180deg, rgba(63, 20, 98, 0.92), rgba(9, 17, 34, 0.96));
+}
+
+.mission-card {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 105, 199, 0.12), transparent 15rem),
+    linear-gradient(180deg, rgba(31, 24, 66, 0.95), rgba(9, 17, 34, 0.96));
 }
 
 .art-card-header {
@@ -399,6 +446,20 @@ h3 {
   color: #ffffff;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28), 0 0 32px rgba(63, 242, 255, 0.12);
   transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.presence-widget-live {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(255, 105, 199, 0.28), transparent 8rem),
+    linear-gradient(135deg, rgba(12, 202, 201, 0.7), rgba(21, 23, 76, 0.9));
+}
+
+.lanyard-widget {
+  width: 100%;
+  min-height: 7rem;
+  object-fit: contain;
+  border-radius: 22px;
+  background: rgba(5, 8, 20, 0.6);
 }
 
 .presence-widget:hover,
@@ -596,6 +657,30 @@ h3 {
   color: #ffffff;
 }
 
+.arsenal-card {
+  background:
+    radial-gradient(circle at 80% 0%, rgba(63, 242, 255, 0.12), transparent 16rem),
+    linear-gradient(180deg, rgba(8, 14, 34, 0.96), rgba(9, 17, 34, 0.96));
+}
+
+.tool-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.tool-cloud span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.4rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.055);
+  color: #f8f5ff;
+  font-weight: 800;
+}
+
 .stream-card {
   display: grid;
   gap: 1rem;
@@ -749,7 +834,8 @@ h3 {
   }
 
   .link-stack a,
-  .mini-grid a {
+  .mini-grid a,
+  .mini-grid span {
     align-items: flex-start;
     flex-direction: column;
     gap: 0.35rem;
