@@ -40,19 +40,19 @@ This version uses public details from:
 - `https://beacons.ai/akasammythepuppy`
 - `https://linktr.ee/akasammythepuppy`
 
-The layout is inspired by compact link-in-bio pages: profile-first hero, large rounded link cards, social tiles, and a creator hub feel.
+The layout is inspired by compact creator pages: a clean centered hero, rounded info cards, stacked links, social tiles, and a creator hub feel.
 
 ## Twitch Embed
 
 The Twitch iframe currently uses:
 
 ```text
-https://player.twitch.tv/?channel=akasammythepuppy&parent=akasammythepuppy.github.io
+https://player.twitch.tv/?channel=akasammythepuppy&parent=foulfoxhacks.github.io
 ```
 
-Replace `akasammythepuppy` with your Twitch channel name and replace `akasammythepuppy.github.io` with the exact GitHub Pages domain that will host the site.
+Replace `akasammythepuppy` with your Twitch channel name and replace `foulfoxhacks.github.io` with the exact GitHub Pages domain that will host the site.
 
-Twitch embeds require the `parent` parameter to match the site domain. If your page is hosted at `https://akasammythepuppy.github.io`, use `parent=akasammythepuppy.github.io`. If it is hosted under a custom domain, use that custom domain instead.
+Twitch embeds require the `parent` parameter to match the site domain. This project page is hosted at `https://foulfoxhacks.github.io/akasammythepuppy.github.io/`, so the parent is `foulfoxhacks.github.io`. If it is hosted under a custom domain later, use that custom domain instead.
 
 ## Deploy To GitHub Pages
 

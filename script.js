@@ -25,7 +25,7 @@ if (profileImage && profilePlaceholder) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".card, .section-block, .thumbnail-card, .social-icon"
+  ".card, .social-links a"
 );
 
 if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
