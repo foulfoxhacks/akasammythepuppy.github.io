@@ -211,12 +211,12 @@ li {
 }
 
 .menu-toggle {
-  position: fixed;
-  left: 1rem;
-  top: calc(var(--android-banner-offset) + 0.85rem);
+  position: sticky;
+  top: 0.75rem;
   z-index: 75;
   width: 3.25rem;
   height: 3.25rem;
+  margin: 0.75rem 0 0.75rem 1rem;
   display: grid;
   place-items: center;
   gap: 0.18rem;
@@ -316,7 +316,7 @@ body.menu-open .side-menu {
   min-height: 100svh;
   display: grid;
   align-items: center;
-  padding: 5.8rem 1.2rem 4.8rem;
+  padding: 3.4rem 1.2rem 4.8rem;
   overflow: hidden;
   isolation: isolate;
 }
@@ -419,63 +419,6 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-}
-
-.hero-status-card {
-  position: absolute;
-  right: max(1.2rem, calc((100vw - var(--max-width)) / 2));
-  bottom: 4.4rem;
-  z-index: 4;
-  width: min(21rem, calc(100% - 2.4rem));
-  display: flex;
-  align-items: center;
-  gap: 0.95rem;
-  padding: 0.95rem;
-  border: 1px solid rgba(63, 242, 255, 0.26);
-  border-radius: var(--radius);
-  background: rgba(5, 8, 18, 0.72);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.32), 0 0 30px rgba(63, 242, 255, 0.12);
-  backdrop-filter: blur(14px);
-}
-
-.avatar-frame {
-  width: 4.25rem;
-  aspect-ratio: 1;
-  display: grid;
-  place-items: center;
-  flex: 0 0 auto;
-  border-radius: 28%;
-  background: conic-gradient(from 30deg, var(--pink), var(--purple), var(--blue), var(--cyan), var(--pink));
-  box-shadow: 0 0 28px rgba(255, 98, 207, 0.24), 0 0 34px rgba(63, 242, 255, 0.14);
-  overflow: hidden;
-}
-
-.profile-image,
-.profile-placeholder {
-  width: calc(100% - 0.42rem);
-  height: calc(100% - 0.42rem);
-  object-fit: cover;
-  border-radius: 25%;
-}
-
-.profile-placeholder {
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, var(--purple), var(--pink));
-}
-
-.placeholder-face {
-  font-weight: 950;
-}
-
-.hero-status-card strong,
-.hero-status-card span {
-  display: block;
-}
-
-.hero-status-card span {
-  color: var(--muted);
-  font-size: 0.9rem;
 }
 
 .signal-bar {
@@ -950,14 +893,7 @@ h3 {
 @media (max-width: 920px) {
   .scene-hero {
     min-height: auto;
-    padding-top: 5.2rem;
-  }
-
-  .hero-status-card {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    margin: 1rem auto 0;
+    padding-top: 3rem;
   }
 
   .section-grid,
@@ -973,11 +909,11 @@ h3 {
   }
 
   .menu-toggle {
-    left: 0.8rem;
+    margin-left: 0.8rem;
   }
 
   .scene-hero {
-    padding: 5.8rem 0.8rem 4.25rem;
+    padding: 2.6rem 0.8rem 4.25rem;
   }
 
   .scene-hero::before {
