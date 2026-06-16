@@ -721,6 +721,12 @@ h3 {
   color: #ff9a9a !important;
 }
 
+.presence-devices {
+  margin-top: 0.35rem;
+  color: var(--dim) !important;
+  font-size: 0.86rem;
+}
+
 .discord-user-frame,
 .discord-server-frame {
   display: block;

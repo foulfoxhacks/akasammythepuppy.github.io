@@ -62,12 +62,21 @@ const lanyardAvatar = document.querySelector("[data-lanyard-avatar]");
 const lanyardName = document.querySelector("[data-lanyard-name]");
 const lanyardStatus = document.querySelector("[data-lanyard-status]");
 const lanyardActivity = document.querySelector("[data-lanyard-activity]");
+const lanyardDevices = document.querySelector("[data-lanyard-devices]");
 
 function setLanyardFallback() {
   if (!lanyardCard || !lanyardStatus || !lanyardActivity) return;
   lanyardStatus.textContent = "Widget fallback";
   lanyardStatus.className = "status-pill offline";
   lanyardActivity.textContent = "Lanyard is not returning active presence for this Discord ID yet. The embedded Discord widget below is still available.";
+  if (lanyardDevices) {
+    lanyardDevices.textContent = "Public widget fallback is active.";
+  }
+}
+
+function titleCase(value) {
+  if (!value) return "Offline";
+  return value.charAt(0).toUpperCase() + value.slice(1);
 }
 
 function describeActivity(presence) {
@@ -84,6 +93,26 @@ function describeActivity(presence) {
   const label = types[activity.type] || "Active in";
   const details = [activity.name, activity.details, activity.state].filter(Boolean).join(" - ");
   return `${label} ${details}`;
+}
+
+function describeDevices(presence) {
+  const devices = [
+    presence.active_on_discord_web ? "web" : null,
+    presence.active_on_discord_desktop ? "desktop" : null,
+    presence.active_on_discord_mobile ? "mobile" : null,
+    presence.active_on_discord_embedded ? "embedded" : null,
+    presence.active_on_discord_vr ? "VR" : null
+  ].filter(Boolean);
+
+  if (!devices.length) {
+    return "No active Discord platform is being shared right now.";
+  }
+
+  const deviceList = devices.length === 1
+    ? devices[0]
+    : `${devices.slice(0, -1).join(", ")} and ${devices[devices.length - 1]}`;
+
+  return `Active on Discord ${deviceList}.`;
 }
 
 async function updateLanyardPresence() {
@@ -105,11 +134,14 @@ async function updateLanyardPresence() {
     if (lanyardAvatar) lanyardAvatar.src = avatar;
     if (lanyardName) lanyardName.textContent = user.global_name || user.username || "Sammy";
     if (lanyardStatus) {
-      lanyardStatus.textContent = presence.discord_status || "offline";
+      lanyardStatus.textContent = titleCase(presence.discord_status);
       lanyardStatus.className = `status-pill ${presence.discord_status || "offline"}`;
     }
     if (lanyardActivity) {
       lanyardActivity.textContent = describeActivity(presence);
+    }
+    if (lanyardDevices) {
+      lanyardDevices.textContent = describeDevices(presence);
     }
   } catch (error) {
     setLanyardFallback();

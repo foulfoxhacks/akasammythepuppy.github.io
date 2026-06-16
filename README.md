@@ -58,7 +58,7 @@ The banner is inserted into `#keep-android-open-banner`, then recolored in `styl
 ## Live Integrations
 
 - Discord user ID: `1200276108474601534`.
-- Lanyard presence uses `https://api.lanyard.rest/v1/users/1200276108474601534` when available.
+- Lanyard presence uses `https://api.lanyard.rest/v1/users/1200276108474601534` when available and displays status, shared activity, and active Discord platforms.
 - If Lanyard returns unavailable data, the page falls back to the public Discord user widget.
 - Discord user embed uses `https://widgets.vendicated.dev/user?id=1200276108474601534`.
 - Mello Zone server widget uses Discord server ID `1483048984745345099`.
