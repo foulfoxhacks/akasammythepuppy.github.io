@@ -110,7 +110,7 @@ GitHub Pages will publish the site after the first deployment finishes.
 
 You can open `index.html` directly in a browser. No package manager, install step, or build command is required.
 
---
+---
 
 © 2026 Nexium Development Group, LLC // Aleksandr Freyermuth. All Rights Reserved.
 This repository is source-available for viewing purposes only.
